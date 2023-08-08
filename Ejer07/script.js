@@ -19,7 +19,7 @@ function sumarNumero() {
         valorsuma.innerHTML = suma;
         document.getElementById("sumando").value = "";
     }
-    if (suma > limite){
-        alert("La suma de los números es mayor que el límite");
+    if (suma >= limite){
+        alert("La suma de los números es mayor o igual que el límite");
     }
 }
