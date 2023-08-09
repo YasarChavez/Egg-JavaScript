@@ -21,3 +21,10 @@ console.log(personas);
 personas.forEach((persona) => persona.mostrar());
 console.log(typeof personas);
 
+var listaPersonas = JSON.stringify(personas);
+console.log(listaPersonas);
+console.log(typeof listaPersonas);
+var nuevoPaquete = JSON.parse(listaPersonas);
+console.log(nuevoPaquete);
+console.log(typeof nuevoPaquete);
+
