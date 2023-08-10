@@ -9,6 +9,15 @@ function espacios() {
         nuevafrase += frase[i] + " ";
     }
     console.log(nuevafrase);
-};
+}
 
-espacios();
+// espacios();
+
+// let frase = prompt("Ingrese una frase");
+// let espacios = "";
+
+// for (let i = 0; i < frase.length; i++) {
+//     espacios += frase.substring(i, i + 1) + " ";
+// }
+
+// console.log(`Frase con espacios: ${espacios}`);
