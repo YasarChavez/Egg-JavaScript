@@ -9,12 +9,11 @@ function resaltaPalabras() {
   if (contador == 0) {
     contador++;
     document.getElementById("textoModificar").innerHTML = "";
-    console.log(textoInicial);
     textoInicial = textoInicial.split(" ");
     textoInicial.forEach((element) => {
-      if (element.length > 8) {
+      if (element.length >= 8) {
         textoFinal.push(
-          `<span style="background-color: #FFFF00;">${element}</span>`
+          `<span class="amarillo">${element}</span>`
         );
       } else {
         textoFinal.push(element);
@@ -24,7 +23,6 @@ function resaltaPalabras() {
       document.getElementById("textoModificar").innerHTML +=
         textoFinal[i] + " ";
     }
-    textoInicial = textoInicial.join(" ");
   }else{
     alert("Las palabras ya estan resaltadas");
   }

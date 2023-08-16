@@ -29,10 +29,7 @@ console.log('A :>> ', A);
 
 
 //Arreglo B
-
-for (var i = 0; i < 10; i++) {
-    B.push(A[i]);
-}
+B=A.slice(0, 10);
 console.log('B :>> ', B);
 // B.push(A.slice(0, 10));
 // console.log('B :>> ', B);
